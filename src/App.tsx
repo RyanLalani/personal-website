@@ -85,7 +85,7 @@ function HeroSection() {
             <p className="mono text-xs text-neutral-400 tracking-widest mb-1">LOCATION</p>
             <p className="mono text-xs text-neutral-500 tracking-wider mb-6">
               BROWN UNIVERSITY<br />
-              NEW JERSEY → CHICAGO → SAN FRANCISCO
+              TORONTO → NEW JERSEY → SAN FRANCISCO
             </p>
 
             <div className="flex flex-col gap-1">
