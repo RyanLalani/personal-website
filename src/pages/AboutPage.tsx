@@ -9,7 +9,7 @@ function IntroSection() {
 
       <div className="max-w-2xl fade-in fade-in-delay-4">
         <p className="text-neutral-500 leading-relaxed text-base mb-4">
-          I am currently an Electrical Engineering student at Brown University. Next Summer I will be working at{' '}
+          I am currently an Electrical Engineering student at Brown University. Next Summer I will be working in{' '}
           <a href="https://www.evercore.com/" target="_blank" rel="noopener noreferrer" className="underline-link text-neutral-700">Evercore</a>'s Tech M&A group. Recently, I've been enjoying rock climbing, running, MMA, and Steve Lacy.
         </p>
         <p className="text-neutral-500 leading-relaxed text-base mb-4">
