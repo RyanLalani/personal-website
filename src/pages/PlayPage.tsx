@@ -32,10 +32,11 @@ export default function PlayPage() {
       <p className="mono text-xs text-neutral-400 tracking-widest mb-4">PLAY</p>
       <p className="text-neutral-500 leading-relaxed text-base mb-10">current favorite things + hobbies</p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {shuffledLikes.map((like) => (
+        {shuffledLikes.map((like, i) => (
           <div
             key={like.label}
-            className="group relative overflow-hidden border border-neutral-100 rounded-md aspect-square"
+            style={{ animationDelay: `${i * 0.05}s` }}
+            className="tactile-card fade-in group relative overflow-hidden border border-neutral-100 rounded-md aspect-square"
           >
             {like.image && (
               <img

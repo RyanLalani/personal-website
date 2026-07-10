@@ -47,13 +47,32 @@ body {
 }
 
 .fade-in {
-  animation: fadeInUp 0.6s ease forwards;
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.fade-in-delay-1 { animation-delay: 0.1s; opacity: 0; }
-.fade-in-delay-2 { animation-delay: 0.25s; opacity: 0; }
-.fade-in-delay-3 { animation-delay: 0.4s; opacity: 0; }
-.fade-in-delay-4 { animation-delay: 0.55s; opacity: 0; }
+.fade-in-delay-1 { animation-delay: 0.1s; }
+.fade-in-delay-2 { animation-delay: 0.25s; }
+.fade-in-delay-3 { animation-delay: 0.4s; }
+.fade-in-delay-4 { animation-delay: 0.55s; }
+
+/* Tactile press feedback for interactive elements */
+.tactile {
+  transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.2s ease;
+  will-change: transform;
+}
+
+.tactile:active {
+  transform: scale(0.9);
+}
+
+.tactile-card {
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: transform;
+}
+
+.tactile-card:active {
+  transform: scale(0.97);
+}
 
 @keyframes blink {
   0%, 100% { opacity: 1; }

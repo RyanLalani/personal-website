@@ -20,8 +20,15 @@ export default function WorkPage() {
     <section className="px-8 md:px-12 lg:px-16 pt-8 pb-24 min-h-[50vh]">
       <p className="mono text-xs text-neutral-400 tracking-widest mb-10">WORK</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
-        {items.map((item) => (
-          <a key={item.title} href={item.link} target="_blank" rel="noopener noreferrer" className="group block">
+        {items.map((item, i) => (
+          <a
+            key={item.title}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ animationDelay: `${i * 0.1}s` }}
+            className="tactile-card fade-in group block"
+          >
             <div className="overflow-hidden rounded-md border border-neutral-100 aspect-[16/10] mb-3">
               <img
                 src={item.image}
