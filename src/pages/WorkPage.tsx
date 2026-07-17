@@ -12,6 +12,7 @@ const items = [
     year: '2024',
     image: '/cane-tag.gif',
     link: '#',
+    fit: 'contain' as const,
   },
 ];
 
@@ -29,11 +30,11 @@ export default function WorkPage() {
             style={{ animationDelay: `${i * 0.1}s` }}
             className="tactile-card fade-in group block"
           >
-            <div className="overflow-hidden rounded-md border border-neutral-100 aspect-[16/10] mb-3">
+            <div className="overflow-hidden rounded-md border border-neutral-100 aspect-[16/10] mb-3 bg-white">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className={`w-full h-full ${item.fit === 'contain' ? 'object-contain' : 'object-cover'} group-hover:scale-105 transition-transform duration-300`}
               />
             </div>
             <p className="font-semibold text-sm tracking-tight group-hover:underline">{item.title}</p>
