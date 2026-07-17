@@ -10,7 +10,7 @@ const items = [
     title: 'Cane Tags + Braille Business Cards',
     tag: 'Project',
     year: '2024',
-    image: '/placeholder-two.png',
+    image: '/cane-tag.gif',
     link: '#',
   },
 ];
