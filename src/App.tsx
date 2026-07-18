@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage';
 import WorkPage from './pages/WorkPage';
 import SidequestsPage from './pages/SidequestsPage';
 import PlayPage from './pages/PlayPage';
+import UnderConstructionPage from './pages/UnderConstructionPage';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/work" element={<WorkPage />} />
         <Route path="/sidequests" element={<SidequestsPage />} />
         <Route path="/play" element={<PlayPage />} />
+        <Route path="/under-construction" element={<UnderConstructionPage />} />
       </Routes>
       <Footer />
     </div>
